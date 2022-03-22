@@ -1,4 +1,5 @@
 {
+  "homepage": "http://MounaTebourski/github.io/myPortfolio",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -16,6 +17,7 @@
     "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
     "formik": "^2.2.9",
+    "gh-pages": "^3.2.3",
     "ityped": "^1.0.3",
     "react": "^17.0.2",
     "react-dimmer": "^1.0.7",
@@ -31,6 +33,8 @@
     "yup": "^0.32.11"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
