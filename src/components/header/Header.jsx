@@ -17,7 +17,7 @@ export default function Header(props) {
       <div className="wrapper">
           <div className="left">
               <a  href='/' className='logo'>Tebourski.M.</a>
-              <div className="itemContainer">
+             {/* <div className="itemContainer">
                 <PhoneAndroid className="icon"/>
                 <span> +1 (613) 600 5705</span>
               </div>
@@ -25,6 +25,7 @@ export default function Header(props) {
                 <MailOutline className="icon"/>
                 <span>mouna.tebourski.pro@gmail.com</span>
               </div>
+           */}
               <div className="itemContainer">
               <Link className="itemlink" href='https://www.linkedin.com/in/mouna-tebourski/' >
                 <LinkedIn className="icon"/>
