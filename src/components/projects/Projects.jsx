@@ -43,7 +43,7 @@ export default function Projects() {
                   <p>Languages : {d.languages}</p>
                  </div>
                  <button onClick={()=> {
-                   navigate(`/projects/${d.id}`);
+                   navigate(`/myPortfolio/projects/${d.id}`);
                  }} type="submit">{isEnglish ? "More Details" : "Plus de Détails"}</button>
               </div>
               <div className="right">

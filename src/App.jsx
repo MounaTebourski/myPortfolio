@@ -20,24 +20,24 @@ function App() {
 					<div className="app">
 						<Router>
 							<Routes>
-								<Route path="/" element={<Layout />}>
+								<Route path="/myPortfolio" element={<Layout />}>
 									<Route index element={<About className="children" />} />
 									<Route
-										path="about"
+										path="/myPortfolio/about"
 										element={<About className="children" />}
 									/>
 									<Route
-										path="portfolio"
+										path="/myPortfolio/portfolio"
 										element={<Portfolio className="children" />}
 									/>
-									<Route path="projects"	element={<Projects className="children" />}/>
+									<Route path="/myPortfolio/projects"	element={<Projects className="children" />}/>
                     
                   <Route 
-                    path="/projects/:projectId" 
+                    path="/myPortfolio/projects/:projectId" 
                     element={<ProjectDetails />} 
                   />
                    <Route 
-                    path="/projects/:*" 
+                    path="/myPortfolio/projects/:*" 
                     element={<ProjectDetails />} 
                   />
 									<Route
